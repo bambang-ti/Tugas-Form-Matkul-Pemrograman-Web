@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Siswa</title>
+</head>
+<body>
+    <form>
+        <h1>Form Registrasi Siswa</h1>
+        <fieldset>
+            <legend>Lengkapi Biodata dibawah ini! </legend>
+            <h3>Data Diri</h3>
+            <div>
+                <label for="name">Nama Lengkap:</label>
+                <div>
+                    <input type="text" name="name" id="name" required>
+                </div>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <div>
+                    <input type="email" name="email" 
+                    placeholder="siswa@gmail.com" id="email">
+                </div>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="5-10 karakter">
+                </div>
+            </div>
+            <div>
+                <label for="JK">Jenis Kelamin:</label>
+                <div>
+                    <input type="radio" name="JK" value="L">Laki-laki
+                    <input type="radio" name="JK" value="P">Perempuan
+                </div>
+            </div>
+            <div>
+                <label for="TL">Tempat Lahir:</label>
+                    <input type="text" name="TL" id="TL">
+                <label for="Tanggal">Tanggal lahir:</label>
+                    <input type="date" name="Tanggal" id="Tanggal">
+            </div>
+            <div>
+                <label for="Kelas">Kelas:</label>
+                <div>
+                    <select name="Kelas">
+                        <option value="">---pilih---</option>
+                        <option value="Sepuluh">X</option>
+                        <option value="Sebelas">XI</option>
+                        <option value="Dua belas">XII</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="number">Nomor Telpon atau Whatsapp:</label>
+                <div>
+                    <input type="text" name="number" id="number">
+                </div>
+            </div>
+            <h3>Alamat</h3>
+            <div>
+                <label for="address">Alamat Singkat:</label>
+                <div>
+                    <textarea name="address" id="address" cols="40" rows="2"></textarea>
+                </div>
+            </div>
+            <div>
+                <label for="Kota">Kota/Kabupaten:</label>
+                    <input type="text" name="Kota" id="Kota">
+                    <label for="Kodepos">Kode Pos:</label>
+                    <input type="text" name="Kode pos" id="Kodepos">
+            </div>
+            <div>
+                <button type="submit">Kirim!</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
